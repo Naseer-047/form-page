@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User input form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="form-sect">
+        <h1>Family Details form</h1>
+        <form action="">
+            <section class="section">
+                <h2>Identeification details</h2>
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value="#1">--Select--</option>
+                    <option value="#2">Andhra Pradesh</option>
+                    <option value="#3">Arunachal Pradesh</option>
+                    <option value="#4">Assam</option>
+                    <option value="#">Bihar</option>
+                    <option value="#">Chhattisgarh</option>
+                    <option value="">Goa</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Haryana</option>
+                    <option value="">Himachal Pradesh</option>
+                    <option value="">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="">Kerala</option>
+                    <option value="">Madhya Pradesh</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Manipur</option>
+                    <option value="">Meghalaya</option>
+                    <option value="">Mizoram</option>
+                    <option value="">Nagaland</option>
+                    <option value="">Odisha</option>
+                    <option value="">Punjab</option>
+                    <option value="">Rajasthan</option>
+                    <option value="">Sikkim</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="">Telangana</option>
+                    <option value="">Tripura</option>
+                    <option value="">Uttar Pradesh</option>
+                    <option value="">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                <label for="district">District</label>
+                <select name="district" id="district">
+                    <option value="">--Select district--</option>
+                </select>
+                <label for="village">Village/Town/city</label>
+                <input type="text" name="village" id="village" required placeholder="enter your village / city/ town name with pincode">
+                <label for="blockNumber">Enumeration Block Number</label>
+                <input type="text" name="blockNumber" id="blockNumber" required>
+                <label for="district">Household Head Name</label>
+                <input type="text" name="district" id="district" required>
+
+            </section>
+            <section class="section">
+                <h2>household Facilitys</h2>
+                <label for="water">Water supply</label>
+                <select name="water" id="water" required>
+                    <option value="0">--select--</option>
+                    <option value="1">tap</option>
+                    <option value="2">well</option>
+                    <option value="3">handpump</option>
+                    <option value="4">other</option>
+                </select>
+                <label for="toilet">toilet facility</label>
+                <select name="toilet" id="toilet" required>
+                    <option value="0">--select--</option>
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+                <label for="electricty">electricty </label>
+                <select name="electricty" id="toilet" required>
+                    <option value="0">--select--</option>
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+            </section>
+            <section class="section">
+                <h2>family members</h2>
+                <label for="members">Enter the no of members in your family</label>
+               <input id="memberCount" type="number" min="1" max="50" required>
+
+<div id="membersWrapper"></div>
+
+            </section>
+            <section class="section">
+                <h2>declarition</h2>
+                <div class="dec">
+                    <input type="checkbox" id="declarition" style="width: 20px; height: 60px; margin-right: 30px;"
+                        required><label for="declaration">i declare that the above information is true to the best of my
+                        know ladge of my knowledge.</label>
+                </div>
+            </section>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+<script src="form.js"></script>
+
+</html>
